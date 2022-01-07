@@ -1,12 +1,11 @@
 [
   {
     "email": "info@humanrisks.com",
-    "email_verified": "true",
     "user_id": "1fbbf91c-d9d5-4541-a697-489e1961e6e0",
     "custom_password_hash": {
       "algorithm": "pbkdf2",
       "hash": {
-        "value": "$pbkdf2-sha1$i=1000,l=32$koPptxhBo5ptz6MVwLcBqQ==$DK5nx5QwxRd7OFcYoShKPIN73cn0TY63sKrO8zo4tAQ=",
+        "value": "$pbkdf2-sha1$i=1000,l=32$koPptxhBo5ptz6MVwLcBqQ$DK5nx5QwxRd7OFcYoShKPIN73cn0TY63sKrO8zo4tAQ",
         "encoding": "utf8"
       }
     }
