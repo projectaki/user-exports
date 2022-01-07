@@ -36,7 +36,8 @@ private Func<User, UserExportModel> TransformUserToExport = u => new UserExportM
 /// - Generate hash string for auth0 using provided format
 /// </param>
 /// <returns></returns>
-public static string GenerateHash(string hash) {
+public static string GenerateHash(string hash)
+{
     // Decode
     byte[] data = Convert.FromBase64String(hash);
 
@@ -46,8 +47,9 @@ public static string GenerateHash(string hash) {
     string salt = Convert.ToBase64String(saltBytes);
     string key = Convert.ToBase64String(keyBytes);
 
-    string saltWithoutPadding = string.Join("", salt.Split().Where(c => c != "="));
-    string keyWithoutPadding = string.Join("", key.Split().Where(c => c != "="));
+
+    string saltWithoutPadding = new string(salt.ToCharArray().Where(c => c != "="[0]).ToArray());
+    string keyWithoutPadding = new string(key.ToCharArray().Where(c => c != "="[0]).ToArray());
 
     var auth0String = $"$pbkdf2-sha1$i=1000,l=32${saltWithoutPadding}${keyWithoutPadding}";
 
