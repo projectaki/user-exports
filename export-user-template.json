@@ -1,0 +1,12 @@
+{
+  "email": "string",
+  "email_verified": "string",
+  "user_id": "string",
+  "custom_password_hash": {
+    "algorithm": "pbkdf2",
+    "hash": {
+      "value": "$pbkdf2-sha1$i=1000,l=32${salt}${hash}",
+      "encoding": "utf8"
+    }
+  }
+}
