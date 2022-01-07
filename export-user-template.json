@@ -1,6 +1,6 @@
 {
   "email": "string",
-  "email_verified": "string",
+  "email_verified": true,
   "user_id": "string",
   "custom_password_hash": {
     "algorithm": "pbkdf2",

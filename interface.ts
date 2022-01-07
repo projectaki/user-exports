@@ -1,6 +1,6 @@
 interface UserExport {
   email: string;
-  email_verified: string;
+  email_verified: boolean;
   user_id: string;
   custom_password_hash: CustomPasswordHash;
 }
